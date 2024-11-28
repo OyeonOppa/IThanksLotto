@@ -1,7 +1,7 @@
 const backgroundMusic = document.getElementById("backgroundMusic");
 
 // ตั้งค่าเสียงเริ่มต้นที่ 10%
-backgroundMusic.volume = 0.1;
+backgroundMusic.volume = 0.2;
 
 // rewards array ของรางวัล
 const rewards = [
@@ -68,7 +68,7 @@ const rewards = [
     ctx.fillStyle = "#888";
     ctx.font = "20px Arial";
     ctx.textAlign = "center";
-    ctx.fillText(`IT Lotto`, canvas.width / 2, canvas.height / 2-10);
+    ctx.fillText(`IThanks Lotto`, canvas.width / 2, canvas.height / 2-10);
     ctx.fillText(`${index + 1}`, canvas.width / 2, canvas.height / 2+30);
 
     let isScratching = false;
