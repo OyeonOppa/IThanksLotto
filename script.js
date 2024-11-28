@@ -1,6 +1,6 @@
 // rewards array ของรางวัล
 const rewards = [
-    "สมุดโน้ต z.com", "แก้วน้ำลายไทย", "ตุ๊กตาหมี", "Apple Watch",
+    "สมุดโน้ต z.com", "แก้วน้ำลายไทย", "ตุ๊กตาหมี", "ถุงผ้า",
     "เงินสด 500 บาท", "บัตร Starbucks", "หูฟัง Sony", "บัตรเติมเงิน 300 บาท",
     "iPad Mini", "เครื่องฟอกอากาศ", "Power Bank", "Gift Card 1000 บาท",
     "Nespresso", "รางวัลพิเศษ", "ลำโพง Bluetooth", "โน้ตบุ๊ค",
@@ -47,7 +47,7 @@ const rewards = [
     ctx.fillRect(0, 0, canvas.width, canvas.height);
   
     ctx.fillStyle = "#888";
-    ctx.font = "30px Arial";
+    ctx.font = "20px Arial";
     ctx.textAlign = "center";
     ctx.fillText(`IT Lotto`, canvas.width / 2, canvas.height / 2-10);
     ctx.fillText(`${index + 1}`, canvas.width / 2, canvas.height / 2+30);
@@ -134,7 +134,10 @@ const password = "KPIp@ssw0rd"; // รหัสผ่านสำหรับย
         console.log("ข้อมูลใน LocalStorage ถูกลบ");
         location.reload(); // โหลดหน้าเว็บใหม่
       }
-    }});
+    } else {
+      alert("รหัสผ่านไม่ถูกต้อง! กรุณาลองใหม่.");
+    }
+    });
   });
   
   
